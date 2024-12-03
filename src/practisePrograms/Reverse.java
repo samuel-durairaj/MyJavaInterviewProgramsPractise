@@ -1,5 +1,7 @@
 package practisePrograms;
 
+import java.util.Scanner;
+
 public class Reverse {
 
 	public void reverseString() {
@@ -11,6 +13,21 @@ public class Reverse {
 		{
 			System.out.print(str.charAt(i));
 		}
+	}
+	public void reverseStringOrPallindrome() {
+		String str = "malayalam";
+		String rev = "";
+		
+		int len = str.length();
+		
+		for(int i=len-1; i>=0; i--) 
+		{
+			rev = rev+str.charAt(i);
+		}
+		if(str.equals(rev))
+			System.out.println("String is a Pallindrome");
+		else
+			System.out.println("String is Not a Pallindrome");
 	}
 	public void lastWordOfString() {
 		String str = "This is my country";
@@ -38,18 +55,32 @@ public class Reverse {
 			System.out.print(nums[i]);
 		}
 	}
-	public void reverseNumber() {
-		int original = 123456;
-		int reverse = 0;
-		int reminder;
+	public void reverseNumberOrPallindrome() {
 		
-		while(original!=0)
-		{
-			reminder = original % 10;
-			reverse = reverse * 10 + reminder;
-			original = original /10;
-		}
-		System.out.println(reverse);
+		// Pallindrome or Reverse number
+		
+				Scanner scan = new Scanner(System.in);
+				System.out.println("Enter the number: ");
+				
+				//Variables Initialisation
+				int num = scan.nextInt();
+				int reverse=0 , temp, reminder;
+				
+				temp = num;
+				
+				while(temp!=0) {
+					reminder =temp%10;
+					reverse = reverse*10 + reminder;
+					temp = temp/10;
+				}
+				if(num==reverse)
+				{
+				System.out.println(reverse+" is a Palindrome");
+				}
+				else
+				{
+					System.out.println(reverse+" is not a Palindrome");
+			    }
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -57,8 +88,9 @@ public class Reverse {
 		Reverse reverse = new Reverse();
 		//reverse.reverseString();
 //		reverse.lastWordOfString();
-//		reverse.reverseNumber();
-		reverse.reverseStringOfWords();
+//		reverse.reverseNumberOrPallindrome();
+	//	reverse.reverseStringOfWords();
+		reverse.reverseStringOrPallindrome();
 	}
 
 }

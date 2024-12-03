@@ -4,38 +4,32 @@ import java.util.*;
 
 public class Practise {
 
-	public static int[] practicals(int[] nums, int targetSum)
+	public static void practicals()
 	{
-		//Two sum index
+		//Triangle pattern
+		int rowAndCol = 5;
 		
-		Map<Integer,Integer> bag = new HashMap<>();
-		
-		for(int i=0; i<=nums.length; i++)
+		for(int i=0;i<=rowAndCol;i++)
 		{
-		     int x = nums[i];
-		     int y = targetSum-x;
-		     
-		     if(bag.containsKey(y))
-		     {
-		    	return new int[] {bag.get(y),i};
-		     }
-		     else {
-		    	 bag.put(nums[i], i);
-		     }
+			
+			for(int k=0;k<=i;k++)
+			{
+				System.out.print(" ");
+			}
+			for(int j=rowAndCol; j>=i;j--)
+			{
+				System.out.print("* ");
+			}
+		System.out.println();
 		}
-		return new int []{}; //Default Return
+		
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Practise prac = new Practise();
-		int[] nums = {2,4,6,1,7,3};
-		int targetSum = 5;
 		
-		int result[] = practicals(nums, targetSum);
-		
-		//practicals();
-		System.out.println(Arrays.toString(result));
+		practicals();
 		
 		//prac.practicals(new int[]nums{2,1,3,4,5,2,7});
 		//.out.println(practicals(new int[] {2,1,3,4,5,2,7}));
