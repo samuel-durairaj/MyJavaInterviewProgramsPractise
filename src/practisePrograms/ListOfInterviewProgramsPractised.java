@@ -16,6 +16,12 @@
  * 18. Find the two sum index from an array
  * 19. Convert String to Integer and Integer to String
  * 20. Sum of an array
- * 
- * 
+ * 21. Find the number of occurence of 'character'/'word' in a string
+ * 22. Uppper case to lower case and lower case to upper case
+ * 23. Display the alphabets, numbers and special characters from the string using regex/pre-defined functions
+ * 24. Print the vowel/consonant characters from the string and its count
+ * 25. Find prime numbers
+ * 26. Find Odd / Even numbers
+ * 27. Fibonacci series
+ * 28. Triplet sum in an array
  */
