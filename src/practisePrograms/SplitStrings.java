@@ -23,6 +23,11 @@ public class SplitStrings {
 		for(int i=0;i<=(splitStr3.length)-1;i++) {
 			System.out.print(" " +splitStr3[i]);
 		}
+		System.out.println("*******************");
+		
+		//Replace special characters with sapces
+		str = str.replaceAll("@#!!", "replaced");
+		System.out.println(str);
 	}
 	
 static void splitSpecialAlphabetNumberUserDefinedFunctions() {
@@ -54,8 +59,8 @@ static void splitSpecialAlphabetNumberUserDefinedFunctions() {
 
 	public static void main(String[] args) {
 		
-		//splitSpecialAlphabetNumberRegEx();
-		splitSpecialAlphabetNumberUserDefinedFunctions();
+		splitSpecialAlphabetNumberRegEx();
+		//splitSpecialAlphabetNumberUserDefinedFunctions();
 	}
 
 }

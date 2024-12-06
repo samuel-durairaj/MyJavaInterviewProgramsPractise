@@ -23,5 +23,11 @@
  * 25. Find prime numbers
  * 26. Find Odd / Even numbers
  * 27. Fibonacci series
- * 28. Triplet sum in an array
- */
+ * 28. Find the sum of digits of an integer
+ * 29. Find the number of digits in an integer
+ * 30. Factorial of the given number
+ * 31. Min and Max value in an array
+ * 32. Search for an element in an array using (Linear Search)
+ * 33. Sorting using (Bubble Sort) technique
+ * 
+ */  
