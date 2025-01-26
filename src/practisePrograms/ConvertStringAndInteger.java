@@ -1,4 +1,4 @@
-package dsa.practiseprograms;
+package practisePrograms;
 
 public class ConvertStringAndInteger {
 	

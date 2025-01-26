@@ -12,11 +12,13 @@ public class BubbleSort {
 		
 		int len = arr.length;
 		
-		for(int i=0;i<len-1;i++)  // Total number of passes
+		for(int i=0;i<len;i++)  // Total number of passes
 		{
 			for(int j=0;j<len-1;j++) // Total number of Iterations
 			{
-				if(arr[j]>arr[j+1]) {
+				if(arr[j]>arr[j+1]) 
+				{
+					//Swap using the 'temp' variable
 					int temp = arr[j];
 					arr[j]=arr[j+1];
 					arr[j+1]=temp;

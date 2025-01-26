@@ -4,7 +4,7 @@ public class LinearSearch {
 
 	public static void linearSearch() {
 		int[] arr = {4,6,2,1,8,12,9};
-		int searchEle = 12;
+		int searchEle = 22;
 		int len = arr.length;
 		boolean flag = false;
 		

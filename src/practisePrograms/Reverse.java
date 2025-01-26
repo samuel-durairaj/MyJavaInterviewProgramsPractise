@@ -1,3 +1,4 @@
+
 package practisePrograms;
 
 import java.util.Scanner;

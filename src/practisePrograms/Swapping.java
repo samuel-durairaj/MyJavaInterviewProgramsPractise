@@ -53,6 +53,12 @@ public class Swapping {
 	         str1 = str3.substring(str2.length());
 	         
 	         System.out.print("After Swap :"+str1+" "+str2);
+	         
+	         try {
+	        	 
+	         }catch(Throwable exp) {
+	        	 
+	         }
 		        
 	}
 	public static void main(String[] args) {

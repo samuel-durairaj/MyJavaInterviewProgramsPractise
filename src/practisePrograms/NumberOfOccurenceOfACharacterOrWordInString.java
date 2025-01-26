@@ -4,7 +4,7 @@ import java.util.*;
 
 public class NumberOfOccurenceOfACharacterOrWordInString {
 
-	public static void numberOfOccurenceInString() {
+	public static void numberOfCharacterOccurencesInString() {
 		
 		String str = "FGMMLF";
 		
@@ -28,11 +28,11 @@ public class NumberOfOccurenceOfACharacterOrWordInString {
 		
 		String str = "in the moon on in the sky";
 		
-		String[] charArr = str.split(" ");
+		String[] strArr = str.split(" ");
 		
 		Map<String, Integer> bag = new HashMap<>();
 	
-		for(String s: charArr) {
+		for(String s: strArr) {
 			if(bag.containsKey(s)) {
 				bag.put(s, bag.get(s)+1);
 			}
@@ -45,8 +45,8 @@ public class NumberOfOccurenceOfACharacterOrWordInString {
 	}
 	public static void main(String[] args) {
 
-		//numberOfOccurenceInString();
-		wordOccurenceInString();
+		numberOfCharacterOccurencesInString();
+		//wordOccurenceInString();
 
 	}
 
